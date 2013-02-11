@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Jquery-hashchange by danielhusar</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Jquery-hashchange</h1>
+          <h2>hash change plugin</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/danielhusar/jQuery-hashChange/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/danielhusar/jQuery-hashChange/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/danielhusar/jQuery-hashChange" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>jQuery hash change plugin</h1>
+
+<p>Fire all callbacks when hash change.</p>
+
+<h1>Sample usage</h1>
+
+<p>With addHashCallback helper.</p>
+
+<div class="highlight"><pre><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">hash</span><span class="p">){</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hash</span><span class="p">)};</span>
+<span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">hash</span><span class="p">){</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hash</span> <span class="o">+</span> <span class="nx">hash</span><span class="p">)};</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">addHashCallback</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">addHashCallback</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">hashChange</span><span class="p">();</span>
+</pre></div>
+
+<p>Passing array of callbacks;</p>
+
+<div class="highlight"><pre><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">hash</span><span class="p">){</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hash</span><span class="p">)};</span>
+<span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">hash</span><span class="p">){</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hash</span> <span class="o">+</span> <span class="nx">hash</span><span class="p">)};</span>
+<span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">();</span>
+<span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
+<span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">hashChange</span><span class="p">(</span><span class="nx">arr</span><span class="p">);</span>
+</pre></div>
+
+<p>Passing directly a callback;</p>
+
+<div class="highlight"><pre><span class="nx">$</span><span class="p">.</span><span class="nx">hashChange</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">hash</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hash</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+
+<p>See demo section for demo.</p>
+        </section>
+
+        <footer>
+          Jquery-hashchange is maintained by <a href="https://github.com/danielhusar">danielhusar</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
