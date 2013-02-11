@@ -8,6 +8,7 @@
 	var callbacksArray = new Array();
 
 	$.extend({
+		// main plugin function
 		hashChange: function (callbacks) {
 
 			//callback cane be passed directly or by helper function
